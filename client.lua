@@ -20491,11 +20491,26 @@ end
 
 
 local x,y,_ = getElementPosition(localPlayer)
-
-function GetFreeModelIds()
-	local out = FreeIds[#FreeIds]
-	table.remove(FreeIds, #FreeIds)
-	return out
+local ReplaceModel = {}
+function GetFreeModelIds(forid)
+	if(not ReplaceModel[forid]) then
+		local out = FreeIds[#FreeIds]
+		ReplaceModel[forid] = out
+		table.remove(FreeIds, #FreeIds)
+		
+		
+		col_floors = engineLoadCOL("vc/"..forid..".col")
+		engineReplaceCOL(col_floors, ReplaceModel[forid])
+		
+		if(Textures[forid..".dff"]) then 
+			txd = engineLoadTXD("vc/"..Textures[forid..".dff"])
+			engineImportTXD(txd, ReplaceModel[forid])
+		end
+		
+		dff = engineLoadDFF("vc/"..forid..".dff")
+		engineReplaceModel(dff, ReplaceModel[forid])
+	end
+	return ReplaceModel[forid]
 end
 
 
@@ -20590,7 +20605,6 @@ function getMaxIndex(arr)
 end
 
 local TotalObjects = getMaxIndex(GTAVC)
-
 local ind = 1
 local Loading2 = 0
 function GenerateMapPreRender()
@@ -20599,17 +20613,7 @@ function GenerateMapPreRender()
 		local lodname = false
 		local model = v[1]
 		if(not NativeModel[v[1]]) then	
-			model = GetFreeModelIds()			
-			col_floors = engineLoadCOL("vc/"..v[2]..".col")
-			engineReplaceCOL(col_floors, model)
-			
-			if(Textures[v[2]..".dff"]) then 
-				txd = engineLoadTXD("vc/"..Textures[v[2]..".dff"]) 
-				engineImportTXD(txd, model)
-			end
-			
-			dff = engineLoadDFF("vc/"..v[2]..".dff")
-			engineReplaceModel(dff, model)
+			model = GetFreeModelIds(v[2])			
 			
 			lodname = 'lod'..string.sub(v[2], 4)
 			if(not Textures[lodname..".dff"]) then lodname = false end
@@ -20617,10 +20621,9 @@ function GenerateMapPreRender()
 		
 		local rx,ry,rz = fromQuaternion(v[6],v[7],v[8],v[9])
 		GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
-
 		if(isElement(GTAVC[ind][11])) then
-			engineSetModelLODDistance(model, 200)
-			setElementDimension(GTAVC[ind][11], 2)
+			engineSetModelLODDistance(model, 250)
+			setElementDimension(GTAVC[ind][11], 1)
 			
 			if((ind/800) == math.floor(ind/800) or ind == 5) then -- Менять кадр каждые 800 объектов
 				setCameraMatrix(v[3]+150,v[4]+150,v[5]+150, v[3],v[4],v[5]+50)
@@ -20633,14 +20636,10 @@ function GenerateMapPreRender()
 			end
 			
 			if(lodname) then
-				local lodmodel = GetFreeModelIds()
-				txd = engineLoadTXD("vc/"..Textures[lodname..".dff"]) 
-				engineImportTXD(txd, lodmodel)
-				dff = engineLoadDFF("vc/"..lodname..".dff")
-				engineReplaceModel(dff, lodmodel)
+				local lodmodel = GetFreeModelIds(lodname)
 				
 				GTAVC[ind][12] = createObject(lodmodel,v[3],v[4],v[5], rx,ry,rz, true)
-				setElementDimension(GTAVC[ind][12], 2)
+				setElementDimension(GTAVC[ind][12], 1)
 				
 				setLowLODElement(GTAVC[ind][12], false)
 				setLowLODElement(GTAVC[ind][11], GTAVC[ind][12])
