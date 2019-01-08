@@ -48,6 +48,8 @@ addEventHandler("Go_LC", root, Go_LC)
 
 
 function CheckEnd(thePlayer)
+	triggerClientEvent(thePlayer, "ViceRadar", thePlayer)
+	setElementData(thePlayer, "City", "Vice City")
 	checkVC[thePlayer] = "vc"
 	setElementFrozen(thePlayer, true)
 	setCameraMatrix(thePlayer, 6564.8213-8100, -9173.364+8100, 58.48705, 6564.8213-8000, -9173.364+8000, 8.48705) -- 1288.5, 1189, 75.7, 788.5, 689, 25.7)

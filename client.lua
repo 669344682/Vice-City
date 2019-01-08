@@ -3873,8 +3873,8 @@ local GTAVC = {
 [343] = {20622, "ci_mans1rail", 8324.789, -7145.411, 16.65696, 0, 0, 0, 1, -1}, 
 [344] = {20636, "ci_mans2rail1", 8198.704, -7134.832, 14.9747505, 0, 0, -0.7071068, 0.7071068, -1}, 
 [345] = {20637, "ci_mansion3ballust", 8267.737, -7085.729, 23.2298, 0, 0, 0, 1, -1}, 
-[346] = {20158, "gardenbencha", 8205.97, -7043.923, 15.64468, 0, 0, -0.7071068, 0.7071068, -1}, 
-[347] = {20158, "gardenbencha", 8211.374, -7063.836, 15.56085, -0.2717762, -0.6561257, -0.6504248, 0.2694147, -1}, 
+--[346] = {20158, "gardenbencha", 8205.97, -7043.923, 15.64468, 0, 0, -0.7071068, 0.7071068, -1}, 
+--[347] = {20158, "gardenbencha", 8211.374, -7063.836, 15.56085, -0.2717762, -0.6561257, -0.6504248, 0.2694147, -1}, 
 [348] = {20639, "ci_dirtcorn2", 8134.4683, -7264.5254, 5.15477, 0, 0, 0, 1, -1}, 
 [349] = {20640, "ci_mans1grafint", 8324.49, -7145.672, 22.45174, 0, 0, 0, 1, -1}, 
 [350] = {20641, "ci_mans1int", 8324.675, -7145.961, 19.67556, 0, 0, 0, 1, -1}, 
@@ -4425,8 +4425,8 @@ local GTAVC = {
 [895] = {21390, "gf_clublight1_01", 8352.001, -7998.2773, 16.08776, 0, 0, 0, 1, -1}, 
 [896] = {21391, "gf_stadlight1_02", 8414.889, -7882.285, 17.01216, 0, 0, -0.3826834, 0.9238795, -1}, 
 [897] = {21392, "gf_planters4", 8349.686, -7995.793, 16.45325, 0, 0, -0.6723668, 0.7402181, -1}, 
-[898] = {20158, "gardenbencha", 8341.218, -7683.1743, 8.72683, 0, 0, -0.9523958, -0.3048642, -1}, 
-[899] = {20158, "gardenbencha", 8328.382, -7666.9136, 8.71996, 0, 0, -0.8241261, 0.5664064, -1}, 
+--[898] = {20158, "gardenbencha", 8341.218, -7683.1743, 8.72683, 0, 0, -0.9523958, -0.3048642, -1}, 
+--[899] = {20158, "gardenbencha", 8328.382, -7666.9136, 8.71996, 0, 0, -0.8241261, 0.5664064, -1}, 
 [900] = {21395, "gf_treesfw1_01", 8244.005, -8002.252, 30.69873, 0, 0, 0, 1, -1}, 
 [901] = {21396, "gf_treesfw2_01", 8305.47, -8124.1743, 30.55595, 0, 0, 0, 1, -1}, 
 [902] = {21397, "gf_treesfw3_01", 8300.809, -8279.513, 25.60464, 0, 0, 0, 1, -1}, 
@@ -4536,8 +4536,8 @@ local GTAVC = {
 [1006] = {21569, "pw_priint", 7178.432, -8532.064, 7.9790297, 0, 0, 0, 1, -1}, 
 [1007] = {21570, "pw_press1_03", 7178.193, -8531.696, 6.8154297, 0, 0, 0, 1, -1}, 
 [1008] = {21571, "pw_presrommshad", 7175.087, -8526.708, 6.0500298, 0, 0, 0, 1, -1}, 
-[1009] = {20150, "cooker1", 7213.849, -8330.196, 5.3911104, 0, 0, 0, 1, -1}, 
-[1010] = {20150, "cooker1", 7204.787, -8352.605, 5.2995005, 0, -0.7071068, 0, 0.7071068, -1}, 
+--[1009] = {20150, "cooker1", 7213.849, -8330.196, 5.3911104, 0, 0, 0, 1, -1}, 
+--[1010] = {20150, "cooker1", 7204.787, -8352.605, 5.2995005, 0, -0.7071068, 0, 0.7071068, -1}, 
 [1011] = {21572, "scrapgate", 7012.4043, -8242.738, 10.94943, 0, 0, 0, 1, -1}, 
 [1012] = {21573, "tesad06ss", 7124.207, -8433.055, 16.50915, 0, 0, -0.03053851, 0.9995336, -1}, 
 [1013] = {21574, "tesad06sas", 7229.542, -8321.693, 11.653, 0, 0, -0.03053851, 0.9995336, -1}, 
@@ -5376,7 +5376,7 @@ local GTAVC = {
 [1846] = {22342, "man_sdr_props", 7846.073, -8812.62, 13.898741, 0, 0, 0, 1, -1}, 
 [1847] = {22343, "man_sidrm_shad", 7846.121, -8812.248, 14.092211, 0, 0, 0, 1, -1}, 
 [1848] = {22344, "drive_flowers06", 7947.648, -8766.496, 7.41535, 0, 0, 0, 1, -1}, 
-[1849] = {22345, "scar_winglass", 7871.4775, -8850.095, 21.96093, 0, 0, 0, 1, -1}, 
+--[1849] = {22345, "scar_winglass", 7871.4775, -8850.095, 21.96093, 0, 0, 0, 1, -1}, 
 [1850] = {22346, "man_backside_int", 7871.38, -8869.794, 4.5799446, 0, 0, 0, 1, -1}, 
 [1851] = {22347, "man_build_int", 7866.466, -8776.415, 12.69944, 0, 0, 0, 1, -1}, 
 [1852] = {22348, "mn_treesis_int", 7868.1733, -8754.757, 10.46514, 0, 0, 0, 1, -1}, 
@@ -5782,8 +5782,8 @@ local GTAVC = {
 [2252] = {22926, "odnwiret", 8706.311, -8750.174, 13.03075, 0, 0, 0, 1, -1}, 
 [2253] = {23074, "oceanrd1_nt", 8784.792, -8623.824, 4.9564323, 0, 0, 0, 1, 105}, 
 [2254] = {22928, "miamiodnroadxa", 8726.183, -8317.84, -6.2325478, 0, 0, 0, 1, 238}, 
-[2255] = {22930, "odrroofst02", 8698.726, -8749.362, 10.99664, 0, 0, 0, 1, -1}, 
-[2256] = {22931, "odrroofst07", 8715.395, -8769.825, 8.44134, 0, 0, 0, 1, -1}, 
+--[2255] = {22930, "odrroofst02", 8698.726, -8749.362, 10.99664, 0, 0, 0, 1, -1}, 
+--[2256] = {22931, "odrroofst07", 8715.395, -8769.825, 8.44134, 0, 0, 0, 1, -1}, 
 [2257] = {23089, "odalleygb_dy", 8531.82, -9149.697, 4.5893326, 0, 0, 0, 1, 197}, 
 [2258] = {22933, "od_tracks01", 8965.136, -8297.637, 4.1865845, 0, 0, 0, 1, -1}, 
 [2259] = {22934, "od_tracks03", 8964.685, -8556.737, 4.395447, 0, 0, 0, 1, -1}, 
@@ -5846,7 +5846,7 @@ local GTAVC = {
 [2316] = {23006, "cop_pillar_fake", 8640.471, -8724.398, 8.42139, 0, 0, 0.3420201, 0.9396926, -1}, 
 [2317] = {23007, "deco_polgrnda7", 8704.44, -8688.322, 8.304, 0, 0, 0, 1, 23}, 
 [2318] = {23008, "deco_polgrnda8", 8680.361, -8787.722, 11.877001, 0, 0, 0, 1, 24}, 
-[2319] = {23009, "odrroofst06", 8704.935, -8751.37, 8.44134, 0, 0, 0, 1, -1}, 
+--[2319] = {23009, "odrroofst06", 8704.935, -8751.37, 8.44134, 0, 0, 0, 1, -1}, 
 [2320] = {23010, "palettejumpn04", 8656.672, -8923.15, 5.3491096, 0, 0, 0.1779435, 0.9840407, -1}, 
 [2321] = {23108, "odn_majestic2x_dy", 8618.319, -8996.035, 6.08659, 0, 0, 0.1469463, 0.9891444, 95}, 
 [2322] = {23109, "odalleyground2_dy", 8655.627, -8906.193, 4.5893335, 0, 0, 0, 1, -1}, 
@@ -5920,7 +5920,7 @@ local GTAVC = {
 [2390] = {23225, "od_pelican_nt", 8514.176, -9322.64, 5.0312204, 0, 0, 0.07410849, 0.9972502, 97}, 
 [2391] = {23226, "od_pelican2_dy", 8416.832, -9743.905, 11.195351, 0, 0, 0.2419219, 0.9702957, 87}, 
 [2392] = {23227, "od_pelican2_nt", 8416.832, -9743.905, 11.195351, 0, 0, 0.2419219, 0.9702957, 94}, 
-[2393] = {23229, "od_colony_dy", 8425.648, -9698.208, 13.166731, 0, 0, 0.1950904, 0.9807853, 61}, 
+--[2393] = {23229, "od_colony_dy", 8425.648, -9698.208, 13.166731, 0, 0, 0.1950904, 0.9807853, 61}, 
 [2394] = {23230, "od_colony_nt", 8425.648, -9698.208, 13.166731, 0, 0, 0.1950904, 0.9807853, 95}, 
 [2395] = {23231, "od_colony2_nt", 8514.283, -9297.607, 13.166731, 0, 0, 0, 1, 98}, 
 [2396] = {23232, "od_colony2_dy", 8514.289, -9297.607, 13.166731, 0, 0, 0, 1, 62}, 
@@ -11331,8 +11331,8 @@ local GTAVC = {
 [7801] = {23512, "washbuild202", 8274.278, -9188.971, 9.01158, 0, 0, 0, 1, -1}, 
 [7802] = {23536, "wash_pizzaplace", 8349.805, -9241.252, 11.105, 8.663562e-008, -8.149419e-009, 1.481259e-008, 1, 111}, 
 [7803] = {23537, "wash_hospital", 8088.3203, -9240.123, 15.233259, 0, 0, 0, 1, 78}, 
-[7804] = {20158, "gardenbencha", 8072.7095, -9218.705, 4.6836014, 0, 0, -0.7826082, 0.6225145, -1}, 
-[7805] = {20158, "gardenbencha", 8070.9146, -9211.433, 4.6836014, 0, 0, -0.7826082, 0.6225145, -1}, 
+--[7804] = {20158, "gardenbencha", 8072.7095, -9218.705, 4.6836014, 0, 0, -0.7826082, 0.6225145, -1}, 
+--[7805] = {20158, "gardenbencha", 8070.9146, -9211.433, 4.6836014, 0, 0, -0.7826082, 0.6225145, -1}, 
 [7806] = {23538, "wash_hosp03", 8032.6978, -9337.238, 44.30434, 0, 0, -0.3090171, 0.9510565, 76}, 
 [7807] = {23542, "carwashpole3", 8320.119, -9327.128, 4.82724, 0, 0, 0, 1, -1}, 
 [7808] = {23543, "carwashpole2", 8315.514, -9295.905, 4.82724, 0, 0, -1, -4.371139e-008, -1}, 
@@ -20577,87 +20577,89 @@ addEventHandler("onClientFileDownloadComplete", root, onDownloadFinish)
 
 
 
-local BannedNames = {
-	["gardenbencha"] = true, 
-	["odrroofst02"] = true, 
-	["odrroofst07"] = true, 
-	["odrroofst06"] = true, 
-	["cooker1"] = true, 
-	["scar_winglass"] = true, 
-	["od_colony_dy"] = true
-}
 
 
+function getMaxIndex(arr)
+	local ii = 0
+	for i,_ in pairs(arr) do 
+		if(i > ii) then
+			ii=i
+		end
+	end
+	return ii
+end
 
+local TotalObjects = getMaxIndex(GTAVC)
 
 local ind = 1
 local Loading2 = 0
 function GenerateMapPreRender()
 	if(GTAVC[ind]) then 
-		if(BannedNames[GTAVC[ind][2]]) then
-			ind = ind + 1
-		else
-			local v = GTAVC[ind]
-			local lodname = false
-			local model = v[1]
-			if(not NativeModel[v[1]]) then	
-				model = GetFreeModelIds()			
-				col_floors = engineLoadCOL("vc/"..v[2]..".col")
-				engineReplaceCOL(col_floors, model)
-				
-				if(Textures[v[2]..".dff"]) then 
-					txd = engineLoadTXD("vc/"..Textures[v[2]..".dff"]) 
-					engineImportTXD(txd, model)
-				end
-				
-				dff = engineLoadDFF("vc/"..v[2]..".dff")
-				engineReplaceModel(dff, model)
-				
-				lodname = 'lod'..string.sub(v[2], 4)
-				if(not Textures[lodname..".dff"]) then lodname = false end
+		local v = GTAVC[ind]
+		local lodname = false
+		local model = v[1]
+		if(not NativeModel[v[1]]) then	
+			model = GetFreeModelIds()			
+			col_floors = engineLoadCOL("vc/"..v[2]..".col")
+			engineReplaceCOL(col_floors, model)
+			
+			if(Textures[v[2]..".dff"]) then 
+				txd = engineLoadTXD("vc/"..Textures[v[2]..".dff"]) 
+				engineImportTXD(txd, model)
 			end
 			
-			local rx,ry,rz = fromQuaternion(v[6],v[7],v[8],v[9])
-			GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
-
-			if(isElement(GTAVC[ind][11])) then
-				engineSetModelLODDistance(model, 200)
-				setElementDimension(GTAVC[ind][11], 2)
-				
-				if((ind/800) == math.floor(ind/800) or ind == 5) then -- Менять кадр каждые 800 объектов
-					setCameraMatrix(v[3]+150,v[4]+150,v[5]+150, v[3],v[4],v[5]+50)
-					setWeather(1)
-					setFogDistance(1000)
-					setFarClipDistance(3000)
-					setRainLevel(0)
-					setSkyGradient(30,117,210, 53,162,227)
-					setCloudsEnabled(false)
-				end
-				
-				if(lodname) then
-					local lodmodel = GetFreeModelIds()
-					txd = engineLoadTXD("vc/"..Textures[lodname..".dff"]) 
-					engineImportTXD(txd, lodmodel)
-					dff = engineLoadDFF("vc/"..lodname..".dff")
-					engineReplaceModel(dff, lodmodel)
-					
-					GTAVC[ind][12] = createObject(lodmodel,v[3],v[4],v[5], rx,ry,rz, true)
-					setElementDimension(GTAVC[ind][12], 2)
-					
-					setLowLODElement(GTAVC[ind][12], false)
-					setLowLODElement(GTAVC[ind][11], GTAVC[ind][12])
-					engineSetModelLODDistance(lodmodel, v[10])
-				else
-					setLowLODElement(GTAVC[ind][11], false)
-				end
-			end
-			ind = ind+1
+			dff = engineLoadDFF("vc/"..v[2]..".dff")
+			engineReplaceModel(dff, model)
+			
+			lodname = 'lod'..string.sub(v[2], 4)
+			if(not Textures[lodname..".dff"]) then lodname = false end
 		end
+		
+		local rx,ry,rz = fromQuaternion(v[6],v[7],v[8],v[9])
+		GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
+
+		if(isElement(GTAVC[ind][11])) then
+			engineSetModelLODDistance(model, 200)
+			setElementDimension(GTAVC[ind][11], 2)
+			
+			if((ind/800) == math.floor(ind/800) or ind == 5) then -- Менять кадр каждые 800 объектов
+				setCameraMatrix(v[3]+150,v[4]+150,v[5]+150, v[3],v[4],v[5]+50)
+				setWeather(1)
+				setFogDistance(1000)
+				setFarClipDistance(3000)
+				setRainLevel(0)
+				setSkyGradient(30,117,210, 53,162,227)
+				setCloudsEnabled(false)
+			end
+			
+			if(lodname) then
+				local lodmodel = GetFreeModelIds()
+				txd = engineLoadTXD("vc/"..Textures[lodname..".dff"]) 
+				engineImportTXD(txd, lodmodel)
+				dff = engineLoadDFF("vc/"..lodname..".dff")
+				engineReplaceModel(dff, lodmodel)
+				
+				GTAVC[ind][12] = createObject(lodmodel,v[3],v[4],v[5], rx,ry,rz, true)
+				setElementDimension(GTAVC[ind][12], 2)
+				
+				setLowLODElement(GTAVC[ind][12], false)
+				setLowLODElement(GTAVC[ind][11], GTAVC[ind][12])
+				engineSetModelLODDistance(lodmodel, v[10])
+			else
+				setLowLODElement(GTAVC[ind][11], false)
+			end
+		end
+		ind = ind+1
+		
 	else
-		setGameSpeed(1.2)
-		triggerServerEvent("Go_LC", localPlayer, localPlayer)
-		DrawZones()
-		removeEventHandler("onClientRender", root, GenerateMapPreRender)
+		if(ind < TotalObjects) then
+			ind = ind + 1
+		else
+			setGameSpeed(1.2)
+			triggerServerEvent("Go_LC", localPlayer, localPlayer)
+			DrawZones()
+			removeEventHandler("onClientRender", root, GenerateMapPreRender)
+		end
 	end
 	Loading2 = (#GTAVC-(#GTAVC-ind))/#GTAVC*100
 	dxDrawRectangle(100*scale, screenHeight-(100*scale),screenWidth-(200*scale), 15*scale, tocolor(11,102,198,255))
