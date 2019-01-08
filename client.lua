@@ -20623,7 +20623,7 @@ function GenerateMapPreRender()
 		GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
 		if(isElement(GTAVC[ind][11])) then
 			engineSetModelLODDistance(model, 250)
-			setElementDimension(GTAVC[ind][11], 1)
+			setElementDimension(GTAVC[ind][11], 2)
 			
 			if((ind/800) == math.floor(ind/800) or ind == 5) then -- Менять кадр каждые 800 объектов
 				setCameraMatrix(v[3]+150,v[4]+150,v[5]+150, v[3],v[4],v[5]+50)
@@ -20639,7 +20639,7 @@ function GenerateMapPreRender()
 				local lodmodel = GetFreeModelIds(lodname)
 				
 				GTAVC[ind][12] = createObject(lodmodel,v[3],v[4],v[5], rx,ry,rz, true)
-				setElementDimension(GTAVC[ind][12], 1)
+				setElementDimension(GTAVC[ind][12], 2)
 				
 				setLowLODElement(GTAVC[ind][12], false)
 				setLowLODElement(GTAVC[ind][11], GTAVC[ind][12])
