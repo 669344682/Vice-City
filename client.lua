@@ -20634,9 +20634,12 @@ function GenerateMapPreRender()
 		local rx,ry,rz = fromQuaternion(v[6],v[7],v[8],v[9])
 		GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
 		if(isElement(GTAVC[ind][11])) then
+			if(not v[10]) then v[10] = 300 end
 			if(v[10] == -1) then 
 				v[10] = 300 
-			elseif(v[10] < 100) then v[10] = 100 end
+			elseif(v[10] < 100) then 
+				v[10] = 100 
+			end
 			engineSetModelLODDistance(model, v[10])
 			setElementDimension(GTAVC[ind][11], 2)
 			
