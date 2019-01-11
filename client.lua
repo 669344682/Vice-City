@@ -20562,6 +20562,10 @@ addEventHandler("CheckFiles", localPlayer, CheckFiles)
 
 
 
+local BannedObjects = {
+}
+
+
 function AllDownloadCompleted()		
 	for i, v in pairs(GTAVCSource) do
 		v[3] = v[3] + MapOffset[1]
@@ -20573,7 +20577,9 @@ function AllDownloadCompleted()
 			GTAVCSource[i][11] = createObject(v[1],v[3],v[4],v[5], rx,ry,rz)
 			setElementDimension(GTAVCSource[i][11], 2)
 		else
-			table.insert(GTAVC, v)
+			if(not BannedObjects[v[2]]) then
+				table.insert(GTAVC, v)
+			end
 		end
 	end
 
@@ -20646,13 +20652,10 @@ function GenerateMapPreRender()
 	if(GTAVC[ind]) then 
 		local v = GTAVC[ind]
 		local lodname = false
-		local model = v[1]
-		if(not NativeModel[v[1]]) then	
-			model = GetFreeModelIds(v[2])			
+		local model = GetFreeModelIds(v[2])			
 			
-			lodname = 'lod'..string.sub(v[2], 4)
-			if(not Textures[lodname..".dff"]) then lodname = false end
-		end
+		lodname = 'lod'..string.sub(v[2], 4)
+		if(not Textures[lodname..".dff"]) then lodname = false end
 		
 		local rx,ry,rz = fromQuaternion(v[6],v[7],v[8],v[9])
 		GTAVC[ind][11] = createObject(model,v[3],v[4],v[5], rx,ry,rz)
