@@ -30,13 +30,13 @@ end
 
 function Go_LC(thePlayer)
 	setCameraTarget(thePlayer, thePlayer)
-	setElementPosition(thePlayer, -772.8, -1108.2, 18)
+	setElementPosition(thePlayer, 260.4, 858.2, 12.5)
 	setElementDimension(thePlayer, 2)
 	setElementInterior(thePlayer, 0)
 	setElementFrozen(thePlayer, false)
 	local theVehicle = getPedOccupiedVehicle(thePlayer)
 	if(theVehicle) then
-		setElementPosition(theVehicle, -772.8, -1108.2, 20)
+		setElementPosition(theVehicle, 260.4, 858.2, 12.5)
 		setElementDimension(theVehicle, 2)
 		setElementInterior(theVehicle, 0)
 	end

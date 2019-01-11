@@ -20591,7 +20591,7 @@ function AllDownloadCompleted()
 	
 	for _, v in pairs(FreeIdsSource) do
 		if(not NativeModel[v] and not BannedFreeIds[v]) then 
-			table.insert(FreeIds, 1, v)
+			table.insert(FreeIds, v)
 		end
 	end
 	
@@ -20671,7 +20671,7 @@ function GenerateMapPreRender()
 			engineSetModelLODDistance(model, v[10])
 			setElementDimension(GTAVC[ind][11], 2)
 			
-			if((ind/1000) == math.floor(ind/1000) or ind == 5) then -- Менять кадр каждые 1000 объектов
+			if((ind/2000) == math.floor(ind/2000) or ind == 1) then -- Менять кадр каждые 2000 объектов
 				setCameraMatrix(v[3]+150,v[4]+150,v[5]+150, v[3],v[4],v[5]+50)
 				setWeather(1)
 				setFogDistance(1000)
