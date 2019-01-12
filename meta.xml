@@ -1,6 +1,9 @@
 <meta>
 	<info name="VC" version="1.0.1" type="script" author="alexaxel705" description="VC"/>
 	<script src="client.lua" type="client"/>
+	<script src="radar.lua" type="client"/>
+	<file src="radarvc.png" type="client" download="true" />
+	<file src="texreplace.fx" download="true" />
 	<script src="server.lua" type="server"/>
 	<download_priority_group>-1</download_priority_group>
 <file src="vc/3D8Ball.dff" type="client" download="false" />

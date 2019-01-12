@@ -20398,7 +20398,7 @@ function DrawZones()
 			v[4] = v[4] + MapOffset[1]
 			v[5] = v[5] + MapOffset[2]
 			
-			local area = createRadarArea(v[2],v[3],v[4]-v[2],v[5]-v[3], r,g,b)
+			local area = createRadarArea(v[2],v[3],v[4]-v[2],v[5]-v[3], r,g,b, 150)
 			setElementDimension(area, 2)
 		end
 	end
